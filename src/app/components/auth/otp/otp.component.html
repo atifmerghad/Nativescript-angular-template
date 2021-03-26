@@ -1,0 +1,59 @@
+<GridLayout rows="auto,*" class="home-panel">
+
+    <StackLayout row="1">
+        <Label class="title" text="auth.otp_code " style="margin:40" textWrap="true"></Label>
+        <Label style="width: 236;font-size: 14;text-align: center;color: #ffffff;" text="auth.otp_sent "
+            textWrap="true"></Label>
+        <Label id="mobile" text="+212666****74" style="font-size: 14;text-align: center;color: #ffffff;" padding="5"
+            textWrap="true"></Label>
+
+        <WrapLayout (tap)="onFocusField($event)" padding="0" margin="0" orientation="horizontal" marginTop="20">
+            <GridLayout rows="auto, auto" columns="*,*,*,*">
+                <TextField #label0 row="0" col="0" editable="false" maxLength="1" id="label0" class="otp-form-control"
+                    keyboardType="number">
+                </TextField>
+
+                <TextField (loaded)="onLoaded($event)" #myInput id="textField" maxLength="4" noReturnKey="true"
+                    maxLength="4" opacity="0" row="0" col="0" (textChange)="onTextChange($event)"
+                    class="otp-form-control" keyboardType="phone">
+                </TextField>
+
+                <TextField row="0" col="1" editable="false" maxLength="1" id="label1" class="otp-form-control"
+                    keyboardType="number">
+                </TextField>
+                <TextField row="0" col="2" editable="false" maxLength="1" id="label2" class="otp-form-control"
+                    keyboardType="number">
+                </TextField>
+                <TextField row="0" col="3" editable="false" maxLength="1" id="label3" class="otp-form-control"
+                    keyboardType="number">
+                </TextField>
+            </GridLayout>
+        </WrapLayout>
+
+        <Label style="width: 236;font-size: 14;text-align: center;color: #ffffff;margin-top:20;" text="auth.otp_resend "
+            textWrap="true"></Label>
+        <Label style="width: 236;font-size: 14;text-align: center;color: #ffffff;margin-top:10" text="auth.otp_mobile "
+            textWrap="true"></Label>
+        <Label style="width: 236;font-size: 14;text-align: center;color: #ffffff;margin-top:5"
+            text="atifmerghad@gmail.com" textWrap="true"></Label>
+
+        <GridLayout rows="auto" [columns]="isRtl?'auto,*':'*,auto'">
+            <!--
+            <Label row="0" [col]="isRtl?'1':'0'" *ngIf="counter.minutes+counter.seconds>0"
+                text="{{ 'auth.otp_valid'| L }} {{counter.minutes}} {{ 'auth.otp_min'| L }} {{counter.seconds}} {{ 'auth.otp_sec'| L }} "
+                class="otp-dec" style=" font-weight: 400; " marginTop="10" textWrap="true"></Label>
+            -->
+            <Button androidElevation="0" row="0" [col]="isRtl?'0':'1'" *ngIf="showSendOtpSender" [disabled]="true"
+                (tap)="resendOtp()" text="auth.otp_resend" class="otp-dec" style=" font-weight: 500;"
+                marginTop="10"></Button>
+
+        </GridLayout>
+
+
+    </StackLayout>
+
+
+
+
+
+</GridLayout>

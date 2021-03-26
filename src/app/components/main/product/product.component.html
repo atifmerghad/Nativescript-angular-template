@@ -1,0 +1,55 @@
+<GridLayout rows="auto,auto,*">
+    <GridLayout row="0" columns="auto,*,auto" margin="24">
+        <Image col="0" src="~/assets/images/menu.png" width="18" heigh="10"></Image>
+        <Image col="2" src="~/assets/images/shopping-cart.png" width="32" heigh="32"></Image>
+    </GridLayout>
+    <GridLayout row="1">
+        <StackLayout margin="12 24">
+            <Label color="#000000" fontWeight="600" fontSize="24" text="Products" marginBottom="12"></Label>
+            <GridLayout columns="*,auto" style="background: #F2F3F2; border-radius:15; border-color: #F2F3F2"
+                height="50" width="100%">
+                <TextField col="0" hint="Search" borderColor="#F2F3F2" borderWidth="0"></TextField>
+                <Image col="1" src="~/assets/images/loop.png" width="24" height="24" margin="7"></Image>
+            </GridLayout>
+        </StackLayout>
+
+    </GridLayout>
+    <ScrollView row="2" scrollBarIndicatorVisible="false">
+        <StackLayout>
+            <GridLayout>
+                <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false">
+                    <StackLayout orientation="horizontal">
+                        <GridLayout *ngFor="let product of products" marginLeft="24" rows="*,auto,auto"
+                            [borderColor]="product.borderColor" borderWidth="1" width="130" padding="10" height="160"
+                            borderRadius="6" [backgroundColor]="product.backgroundColor" vertivalAlignment="center">
+                            <Image row="0" [src]="product.image"></Image>
+                            <Label row="1" [text]="product.name" horizontalAlignment="center" color="#FE8E31"
+                                fontSize="18" fontWeight="600" textWrap="true"></Label>
+                            <Label row="2" [text]="product.subName" horizontalAlignment="center"></Label>
+                        </GridLayout>
+
+                    </StackLayout>
+                </ScrollView>
+            </GridLayout>
+
+            <GridLayout>
+                <StackLayout margin="12 24">
+                    <Label color="#000000" fontWeight="600" fontSize="24" text="All products" marginBottom="12"></Label>
+
+                    <StackLayout *ngFor="let product of products" margin="12 0 12 0" height="80">
+                        <GridLayout columns="auto,*" height="80" borderRadius="6" padding="10"
+                            [borderColor]="product.borderColor" [backgroundColor]="product.backgroundColor">
+                            <StackLayout col="0">
+                                <Image [src]="product.image" width="70" height="64"></Image>
+                            </StackLayout>
+                            <StackLayout col="1">
+                                <Label text="Fruits"> </Label>
+                            </StackLayout>
+                        </GridLayout>
+                    </StackLayout>
+                </StackLayout>
+
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

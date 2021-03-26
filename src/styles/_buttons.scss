@@ -1,0 +1,29 @@
+@import "./variables";
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 5 10;
+  border-radius: 3;
+  font-family: Raleway-Regular, Raleway;
+  font-size: 17;
+  text-align: center;
+}
+
+.btn-primary {
+  color: $white;
+  border-radius: 6;
+  font-weight: $font-weight;
+  font-size: $font-size17;
+  border: $no-border;
+  padding: $padding;
+  background-color: $teal;
+  height: 44px;
+  &.disabled {
+    background-color: $grey;
+    pointer-events: none;
+  }
+  &:hover {
+    background-color: $light-blue;
+  }
+}

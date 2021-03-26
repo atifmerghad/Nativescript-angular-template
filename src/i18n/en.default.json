@@ -1,0 +1,32 @@
+{
+    "app.name": "App name",
+    "title_activity_kimera": "App name",
+    "ios.info.plist": {
+        "NSLocationWhenInUseUsageDescription": "This will be added to InfoPlist.strings"
+    },
+    "shared": {
+        "lang": "Language",
+        "language": "العربية",
+        "welcome": "Welcome \nto our store",
+        "hint": "enter your name",
+        "getGrocery": "Get your groceries in as fast as one hour",
+        "getStarted": "Get Started"
+    },
+    "auth": {
+        "otp_code": "Please enter your one-time password",
+        "otp_sent": "Your one-time passcode has been sent to the mobile number you registered with",
+        "otp_valid": "Your passcode is valid for",
+        "otp_min": "m",
+        "otp_sec": "s.",
+        "otp_resend": "Request passcode again",
+        "otp_mobile": "Mobile number is not correct?",
+        "otp_email": "Please write to us at",
+        "otp_wrong": "The OTP you entered is not correct. Please try again."
+    },
+    "security": {
+        "jailbreak_title": "Device Non-Compliant",
+        "jailbreak_message": "This app cannot be used because you are using a jailbroken device. Contact your IT administrator for help.",
+        "jailbreak_okButtonText": "OK"
+    },
+    "error": {}
+}

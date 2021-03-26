@@ -1,0 +1,70 @@
+@import "~@nativescript/theme/core";
+@import "~@nativescript/theme/blue"; // Or any other color theme (default === blue)
+
+@import "./styles/variables";
+@import "./styles/buttons";
+
+// background
+
+$bg-gradient: linear-gradient(#3f1c9f, #a85cbf);
+
+// ActionBar
+$ab-background: #a32c28;
+$ab-color: $primary;
+$btn-color: $accent;
+$btn-color-secondary: darken($accent, 5%);
+
+//
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
+
+.btn-green {
+  @include button-bg(#2ecc71);
+}
+
+.btn-blue {
+  @include button-bg(#3498db);
+}
+
+.btn-yellow {
+  @include button-bg(#f1c40f);
+}
+
+.btn-red {
+  @include button-bg(#e74c3c);
+}
+
+/*Other Stylez*/
+.wrap {
+  margin: 0 auto;
+  width: 800;
+  text-align: center;
+}
+
+.m-12 {
+  margin: 12;
+}
+
+* {
+  font-family: Raleway-Regular, Raleway;
+}
+
+.form-control {
+  padding: 10;
+  border-radius: 6;
+  border-width: 1;
+  border-color: #9eacaa;
+  font-size: 14;
+  height: 48;
+  padding-left: 10;
+  color: #000000; //#544a45;
+}

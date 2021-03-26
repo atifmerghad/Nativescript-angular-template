@@ -1,0 +1,38 @@
+<ActionBar title="My App">
+</ActionBar>
+
+<GridLayout rows="*,auto,*">
+
+    <StackLayout row="1">
+
+        <StackLayout>
+
+            <Label text="LOGIN"></Label>
+            <TextField class="form-control" hint="Enter username" [(ngModel)]="loginForm.username" keyboardType="email"
+                autocorrect="false">
+            </TextField>
+
+            <TextField class="form-control" hint="Enter your password" keyboardType="email" [secure]="true"
+                hint="⬤ ⬤ ⬤ ⬤ ⬤ ⬤">
+            </TextField>
+
+
+        </StackLayout>
+
+
+        <StackLayout row="1">
+            <Label class="btn btn-green m-12 " text="LOGIN" (tap)="loginUser()"></Label>
+        </StackLayout>
+        <GridLayout rows="auto,auto" columns="auto,auto" borderColor="red" borderWidth="1">
+            <Label row="0" col="0" class="btn btn-blue m-12 " text="FORGOT PASSWORD "
+                [nsRouterLink]="['/forgot-password']"></Label>
+            <Label row="0" col="1" class="btn btn-red m-12" text="FORGOT USERNAME"
+                [nsRouterLink]="['/forgot-username']"></Label>
+            <Label row="1" colSpan="2" class="btn btn-red m-12" text="REGISTER"
+                [nsRouterLink]="['/forgot-username']"></Label>
+
+        </GridLayout>
+
+    </StackLayout>
+
+</GridLayout>

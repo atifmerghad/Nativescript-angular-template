@@ -1,0 +1,27 @@
+<GridLayout rows="2*,auto,*" class="bg">
+
+    <GridLayout row="0" columns="*,auto" padding="24">
+        <StackLayout col="1" (tap)="changeLanguage()">
+            <Label class="h2" text="{{ 'shared.language' | L}}" color="#0FA956"></Label>
+        </StackLayout>
+    </GridLayout>
+
+    <StackLayout row="1" horizontalAlignment="center" verticalAlignment="center" marginBottom="36">
+
+        <Label color="#0FA956" class="m-12" text="{{'shared.welcome' | L}}" fontSize="48" fontWeight="600"
+            textWrap="true" textAlignment="center" horizontalAlignment="center"></Label>
+        <Label color="#0FA956" class="m-12" text="{{ 'shared.getGrocery'| L}}" horizontalAlignment="center"
+            fontSize="14"></Label>
+    </StackLayout>
+    <FlexboxLayout row="2" flexDirection="column" style="  background:linear-gradient(#3f1c9f, #a85cbf);"
+        verticalAlignment="center">
+        <GridLayout row="2" style="background:#0FA956" textAlingment="center" columns="*,auto,auto,*"
+            [nsRouterLink]="['/login-options']">
+            <Label col="1" class="h2" margin="5" text="{{ 'shared.getStarted' | L}}" color="#FFFFFF" fontWeight="600"
+                textAlignment="center"></Label>
+            <Label col="2" class="h2" margin="5" text=">" color="#FFFFFF" fontWeight="600"
+                textAlignment="center"></Label>
+        </GridLayout>
+    </FlexboxLayout>
+
+</GridLayout>

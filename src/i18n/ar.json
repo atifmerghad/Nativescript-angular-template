@@ -1,0 +1,32 @@
+{
+    "app.name": "App name",
+    "title_activity_kimera": "App name",
+    "ios.info.plist": {
+        "NSLocationWhenInUseUsageDescription": "This will be added to InfoPlist.strings"
+    },
+    "shared": {
+        "lang": "اللغة",
+        "language": "English",
+        "welcome": "مرحبا بك\n في متجرنا ",
+        "hint": "أدخل أسمك",
+        "getGrocery": "احصل على البقالة الخاصة بك في غضون ساعة واحدة",
+        "getStarted": "إبدأ الآن"
+    },
+    "auth": {
+        "otp_code": "الرجاء إدخال الرمز السري ",
+        "otp_sent": "تم إرسال  الرمز السري  إلى رقم الجوال",
+        "otp_valid": "صالح ل",
+        "otp_min": "دقائق و",
+        "otp_sec": "ثواني.",
+        "otp_resend": "إعادة إرسال الرمز السري الآن؟",
+        "otp_mobile": "هل رقم الجوال غير صحيح؟",
+        "otp_email": "يرجى مراسلتنا على البريد الإلكتروني",
+        "otp_wrong": "الرمز السري الذي أدخلته غير صحيح. الرجاء المحاولة مرة أخرى"
+    },
+    "security": {
+        "jailbreak_title": "الجهاز غير متوافق",
+        "jailbreak_message": "لا يمكن استخدام هذا التطبيق لأنك تستخدم جهاز مكسور الحماية. اتصل بمسؤول تكنولوجيا المعلومات لديك للحصول على المساعدة.",
+        "jailbreak_okButtonText": "حسنا"
+    },
+    "error": {}
+}

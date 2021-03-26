@@ -1,0 +1,50 @@
+<BottomNavigation>
+    <TabStrip>
+        <TabStripItem>
+            <Image src="~/assets/images/store.png"></Image>
+        </TabStripItem>
+        <TabStripItem>
+            <Image src="~/assets/images/explore.png"></Image>
+        </TabStripItem>
+        <TabStripItem>
+            <Image src="~/assets/images/Vector.png"></Image>
+        </TabStripItem>
+        <TabStripItem>
+            <Image src="~/assets/images/bookmark.png"></Image>
+        </TabStripItem>
+        <TabStripItem>
+            <Image src="~/assets/images/user.png"></Image>
+        </TabStripItem>
+    </TabStrip>
+
+    <TabContentItem>
+        <GridLayout>
+            <app-product></app-product>
+        </GridLayout>
+    </TabContentItem>
+
+    <TabContentItem>
+        <GridLayout>
+            <Label text="Content 1122"></Label>
+        </GridLayout>
+    </TabContentItem>
+
+    <TabContentItem>
+        <GridLayout>
+            <Label text="Content 2222"></Label>
+        </GridLayout>
+    </TabContentItem>
+
+    <TabContentItem>
+        <GridLayout>
+            <Label text="Content 3333"></Label>
+        </GridLayout>
+    </TabContentItem>
+
+    <TabContentItem>
+        <GridLayout>
+            <Label class="btn btn-red" text="Log out" [nsRouterLink]="['/home']"></Label>
+        </GridLayout>
+    </TabContentItem>
+
+</BottomNavigation>

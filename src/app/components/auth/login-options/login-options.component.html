@@ -1,0 +1,25 @@
+<GridLayout rows="*,auto" class="bg">
+
+    <StackLayout row="1" horizontalAlignment="center" padding="24">
+
+
+        <Label text="Get your groceries with nectar"></Label>
+        <GridLayout class="form-control" columns="auto,*">
+            <Label col="0" text="+212 | "></Label>
+            <TextField col="1" hint="Enter your number"></TextField>
+        </GridLayout>
+        <GridLayout columns="*,*" borderColor="#FFFFFF" borderWidth="0">
+            <Label col="0" class="btn btn-green m-12 " text="LOGIN" [nsRouterLink]="['/login']"></Label>
+            <Label col="1" class="btn btn-green m-12 " text="Register" [nsRouterLink]="['/register']"></Label>
+        </GridLayout>
+
+        <Label class="m-12 " horizontalAlignment="center" textAlignment="center" text="Or connect with social media"
+            [nsRouterLink]="['/register']"></Label>
+
+
+        <Image margin="12 24 10 24" src="~/assets/images/google.png" [nsRouterLink]="['/login']"></Image>
+        <Image margin="10 24 12 24" src="~/assets/images/facebook.png" [nsRouterLink]="['/register']"></Image>
+
+    </StackLayout>
+
+</GridLayout>

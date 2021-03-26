@@ -1,0 +1,53 @@
+/* Add mobile styles for the component here.  */
+
+.home-panel {
+  * {
+    //font-family: Raleway-Regular, Raleway, Almarai, Almarai-Regular;
+  }
+
+  padding: 20;
+  background: #0fa956; //linear-gradient(#3f1c9f, #a85cbf);
+
+  .title {
+    font-size: 24;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .desc {
+    font-size: 14;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .otp-form-control {
+    height: 62;
+    border-radius: 3;
+    border-width: 0.5;
+    border-color: #e0e0e0;
+    background-color: #ffffff;
+    text-align: center;
+    color: #1c4480;
+    font-size: 18;
+    font-weight: bold;
+    margin: 5;
+  }
+
+  .otp-dec {
+    font-size: 14;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .otp-send {
+    font-size: 18;
+  }
+
+  .mobile-validation {
+    font-size: 14;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+  }
+}

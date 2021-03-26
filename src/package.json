@@ -1,0 +1,14 @@
+{
+  "main": "main.js",
+  "android": {
+    "v8Flags": "--expose_gc",
+    "markingMode": "none"
+  },
+  "devDependencies": {
+    "@angular/cli": "^11.2.4",
+    "@nativescript/schematics": "^11.0.0"
+  },
+  "dependencies": {
+    "@schematics/angular": "^9.1.0"
+  }
+}
